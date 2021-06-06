@@ -1,0 +1,36 @@
+#sidebar {
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  list-style: none;
+  padding-left: 5px;
+  height: 100%;
+  padding-top: 50px;
+  z-index: 1;
+  border-right: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#sidebar li {
+  list-style: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: #535a60;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+.menu-item-sidebar {
+  margin-left: 35px !important;
+}
+
+#sidebar > ul > li > ul > li {
+  padding-left: 0px;
+}
+
+#sidebar > ul > li:first-child:hover,
+#sidebar > ul > li > ul > li:hover {
+  color: black;
+  cursor: pointer;
+}

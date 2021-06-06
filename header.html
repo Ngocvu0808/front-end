@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/header.css" />
+
+    <script>
+      function showResult(str) {
+        if (str.length==0) {
+          document.getElementById("livesearch").innerHTML="";
+          document.getElementById("livesearch").style.border="0px";
+          return;
+        }
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function() {
+          if (this.readyState==4 && this.status==200) {
+            document.getElementById("livesearch").innerHTML=this.responseText;
+            document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+          }
+        }
+        xmlhttp.open("GET","livesearch.php?q="+str,true);
+        xmlhttp.send();
+      }
+      </script>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="container-header">
+        <div class="icon-container-header">
+          <a href="home.html"><img id="logo" src="./image/logo.png" /></a>
+        </div>
+        <nav class="nav-menu">
+          <a href="home.html">Home</a>
+          <a href="courses.html">Practice</a>
+          <a href="https://www.facebook.com/ngocvu.nguyen1808/" target="_blank">Forum</a>
+        </nav>
+        <div class="search-container">
+          <form>
+          <img id="search-icon" src="./image/search-icon.png" />
+          <input type="text" size="30" placeholder="Search..." id="input-search" onkeyup="showResult(this.value)" autocomplete="off">
+          <div id="livesearch"></div>
+        </form>
+        </div>
+        <div class="button-container">
+          <button id="log-in"><a href="login.html" class="log-in-link">Log in</a></button>
+          <button id="sign-up"><a href="sign-up.html" class="log-in-link">Sign up</a></button>
+        </div>
+      </div>
+    </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>

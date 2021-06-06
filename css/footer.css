@@ -1,0 +1,37 @@
+.bottom-pos {
+    margin-bottom: 0px;
+}
+.font {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+
+footer{
+        clear: both;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+}
+    
+
+table {
+    width: 30%;
+}
+
+.img-format {
+    width: 30px;
+    height: auto;
+}
+
+.footer-pos{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+

@@ -1,0 +1,173 @@
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background-color: #dee7f0;
+}
+.first-section {
+  background-image: url("/image/home/Study-for-an-Online-Class-Step-13.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+  height: vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
+#band {
+  color: rgb(45, 81, 134);
+}
+.most-intro {
+  font-size: 45px;
+  padding-left: 30px;
+}
+.basic-intro {
+  position: relative;
+  top: 180px;
+  left: 50px;
+  font-weight: bold;
+}
+.description {
+  padding-left: 30px;
+  color: #ffffff;
+  display: block;
+  font-size: 25px;
+  color: rgb(45, 81, 134);
+}
+
+.most-intro-second  {
+  color: rgb(45, 81, 134);
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 55px;
+}
+.describe {
+  margin: 0 auto;
+  color: rgb(45, 81, 134);
+  font-size: 25px;
+}
+.learn-html {
+  background-color: rgb(134, 138, 199);
+  text-align: center;
+  width: 50%;
+  box-sizing: content-box;
+  position: relative;
+  left: 10px;
+}
+.description-course {
+  width: 50%;
+
+}
+
+
+.learn-course:link, .references:visited {
+  color:#000000;
+  background-color: rgba(107,189,255,1);
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 14px;
+  margin: 10px 5px 10px 10px;
+}
+.intro {
+  color: #ffffff;
+  font-size: 20px;
+}
+.intro-course {
+  text-align: center;
+  position: relative;
+  top: 90px;
+  font-size: 25px;
+} 
+.learn-course:hover, .learn-course:active {
+  background-color: rgba(74,211,255,1);
+}
+.references:link, .references:visited {
+  color: #000000;
+  background-color: #aaa;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 14px;
+  display: inline-block;
+}
+.references:hover, .references:active {
+  background-color: #666;
+}
+.flex-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.learn-css {
+  background-color: #9ad6b1;
+  width: 50%;
+  text-align: center;
+  box-sizing: content-box;
+  position: relative;
+  right: 10px;
+  top: 10px;
+}
+
+.description-html-course {
+  background-color: rgb(134, 138, 199);
+  color: #fff;
+  width: 50%;
+  position: relative;
+  right: 10px;
+  font-size: 20px;
+  margin-right: 250px;
+}
+.description-css-course {
+  background-color: #9ad6b1;
+  width: 50%;
+  color: black;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  font-size: 20px;
+  margin-left: 250px;
+}
+.learn-js {
+  background-color: #3a99a0;
+  width: 50%;
+  text-align: center;
+  box-sizing: content-box;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+.description-js-course {
+  background-color: #3a99a0;
+  width: 50%;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 20px;
+  right: 10px;
+  font-size: 20px;
+  margin-right: 200px;
+}
+.describe {
+  width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  position: relative;
+  animation: logo 4s;
+}
+
+@keyframes logo {
+  from {top: 400px;}
+  to {top: 0px;}
+}
+
+
+.css-pos{
+  margin-left: 30px;
+}

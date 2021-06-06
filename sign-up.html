@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script type="text/javascript" src="./js/auth-form.js"></script>
+    <script type="text/javascript" src="./js/include.js"></script>
+</head>
+
+<body style="background-color: #dee7f0">
+    <div w3-include-html="header.html"></div> 
+
+    <div class="form-auth-container">
+        <form class="form-auth">
+            <label style="color: rgb(18, 41, 85);">Display name</label>
+            <input class="input-type" placeholder="Name"/>
+            <label style="color: rgb(18, 41, 85);">Email</label>
+            <input class="input-type" placeholder="Email"/>
+            <label style="color: rgb(18, 41, 85);">Password</label>
+            <input class="input-type" placeholder="Password"/>
+            <p>
+              Passwords must contain at least eight characters, including at least
+              1 letter and 1 number.
+            </p>
+            <button class="btn-primary">Sign up</button>
+            <span>
+              By clicking “Sign up”, you agree to
+              <a href="#">our terms of service</a>,
+              <a href="#">privacy policy </a>and
+              <a href="#"> cookie policy</a>
+            </span>
+          </form>
+          <span style="font-size: 14px; color: #868585" ;
+            >Already have an account?
+            <a
+              style="text-decoration: none; color:#0095ff; cursor:pointer"
+              onclick="navigate_form('sign_in')"
+              >Log in</a>
+          </span>
+    </div>
+    <div class="foot-pos" w3-include-html="footer.html"></div> 
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
